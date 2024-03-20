@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto py-10 relative">
         <Game />
       </div>
     </>

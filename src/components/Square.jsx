@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Square({ value, onSquareClick, squareClassName }) {
+function Square({ value, onSquareClick, squareClassName, isWinningSquare }) {
     // const [value, setValue] = useState(null);
 
     // function handleClick() {
@@ -8,7 +8,7 @@ function Square({ value, onSquareClick, squareClassName }) {
     // }
 
     return (
-        <button className={`w-24 h-24 font-bold text-6xl ${value === 'X' ? 'text-red-500' : ''} ${squareClassName}`} onClick={onSquareClick}>{value}</button>
+        <button className={`square w-24 h-24 text-6xl ${value === 'X' ? 'text-red-500' : ''} ${squareClassName}`} onClick={onSquareClick}>{value}</button>
     );
 }
 
